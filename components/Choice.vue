@@ -41,47 +41,51 @@
 </template>
 
 <script>
-  export default {
-    name: 'Choice',
-  }
+export default {
+  name: 'Choice',
+}
 </script>
 
 <style scoped>
-  .icon-card {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  .title-card {
-    position: absolute;
-    bottom: 60px;
-    left: 20px;
-    font-size: 44px;
-    font-weight: 900;
-    color: #f5f5f5;
-    outline: none;
-  }
-  .description-card {
-    position: absolute;
-    bottom: 15px;
-    left: 20px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #f5f5f5;
-    outline: none;
-  }
-  .label-card {
-    background: rgb(10, 71, 113);
-    background: -moz-linear-gradient(196deg, rgba(10, 71, 113, 1) 0%, rgba(0, 126, 213, 1) 100%);
-    background: -webkit-linear-gradient(196deg, rgba(10, 71, 113, 1) 0%, rgba(0, 126, 213, 1) 100%);
-    background: linear-gradient(196deg, rgba(10, 71, 113, 1) 0%, rgba(0, 126, 213, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0a4771",endColorstr="#007ed5",GradientType=1);
-  }
-  .upload-card {
-    background: rgb(216, 17, 89);
-    background: -moz-linear-gradient(346deg, rgba(216, 17, 89, 1) 0%, rgba(117, 22, 56, 1) 100%);
-    background: -webkit-linear-gradient(346deg, rgba(216, 17, 89, 1) 0%, rgba(117, 22, 56, 1) 100%);
-    background: linear-gradient(346deg, rgba(216, 17, 89, 1) 0%, rgba(117, 22, 56, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d81159",endColorstr="#751638",GradientType=1);
-  }
+.icon-card {
+  position: absolute !important;
+  top: 20px;
+  right: 20px;
+}
+
+.title-card {
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  font-size: 44px;
+  font-weight: 900;
+  color: #f5f5f5;
+  outline: none;
+}
+
+.description-card {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f5f5f5;
+  outline: none;
+}
+
+.label-card {
+  background: rgb(10, 71, 113);
+  background: -moz-linear-gradient(196deg, rgba(10, 71, 113, 1) 0%, rgba(0, 126, 213, 1) 100%);
+  background: -webkit-linear-gradient(196deg, rgba(10, 71, 113, 1) 0%, rgba(0, 126, 213, 1) 100%);
+  background: linear-gradient(196deg, rgba(10, 71, 113, 1) 0%, rgba(0, 126, 213, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0a4771", endColorstr="#007ed5", GradientType=1);
+}
+
+.upload-card {
+  background: rgb(216, 17, 89);
+  background: -moz-linear-gradient(346deg, rgba(216, 17, 89, 1) 0%, rgba(117, 22, 56, 1) 100%);
+  background: -webkit-linear-gradient(346deg, rgba(216, 17, 89, 1) 0%, rgba(117, 22, 56, 1) 100%);
+  background: linear-gradient(346deg, rgba(216, 17, 89, 1) 0%, rgba(117, 22, 56, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d81159", endColorstr="#751638", GradientType=1);
+}
 </style>
