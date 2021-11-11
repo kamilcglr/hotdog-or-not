@@ -1,6 +1,31 @@
 # hotdog-or-not
 
+## WIP
+
+## Architecture
+This app is an universal app built with NuxtJS. NuxtJS is an open source framework to quickly create and organize a 
+VueJS project. It comes with multiple features out-of-the-box like server-side rendering*.
+
+All images are hosted in a S3 bucket.
+
+How we store labels (hotdog or not hotdog) ? 
+
+A labels.json file is also stored on S3. Everytime an user ends the labeling process, we retrieve this file from S3 
+and update the corresponding field according to the inputs of the user. Each object in the json is an image identified by its
+name, and the value is the count of "hotdog" and "not_hotdog".
+
+We chose this format because it is easier in javascript to work with JSON. 
+
+_*(Server-side rendering (SSR), 
+is the ability of an application to contribute by displaying the web-page on the server instead of rendering it in the 
+browser. Server-side sends a fully rendered page to the client; the client's JavaScript bundle takes over which then 
+allows the Vue.js app to hydrate)_
+This app uses AWS S3 with the aws-sdk package from npm.
+
 ## Build Setup
+
+### Prerequisites
+- node (v>=14) & npm 
 
 ```bash
 # install dependencies
@@ -19,51 +44,8 @@ $ npm run generate
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
-## Special Directories
+## Enhancement
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+This app is for demonstration purpose only. For a production grade deployment you have to place the nuxt app behind a reverse proxy like nginx.
+This will also permit you to use a SSL certificate in order to encrypt communications.
 
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
