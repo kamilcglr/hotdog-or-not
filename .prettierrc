@@ -1,4 +1,9 @@
 {
   "semi": false,
-  "singleQuote": true
+  "arrowParens": "always",
+  "singleQuote": true,
+  "vueIndentScriptAndStyle": true,
+  "endOfLine": "auto",
+  "printWidth": 100,
+  "htmlWhitespaceSensitivity": "ignore"
 }
