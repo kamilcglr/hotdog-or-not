@@ -13,7 +13,7 @@ These images could be used as a dataset for a machine learning model in order to
 Demonstration shows how to label images, and how labels are stored in S3 bucket.
 It also shows how to upload an image and where it is stored.
 
-[See the video demonstration](https://youtu.be/H_TNVm8578E)
+[See the video demonstration](https://youtu.be/TqaHy4akZpo)
 
 ## Architecture
 
