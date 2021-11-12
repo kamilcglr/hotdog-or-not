@@ -25,12 +25,12 @@ server-side rendering.
 <br/>
 The server is hosted on an EC2 from AWS.
 
-*(Server-side rendering (SSR) is the ability of an application to contribute
+This app uses AWS S3 with the aws-sdk package from npm to interact with AWS S3.
+
+*Server-side rendering (SSR) is the ability of an application to contribute
 by displaying the web-page on the server instead of rendering it in the browser.
 Server-side sends a fully rendered page to the client; the client's JavaScript
-bundle takes over which then allows the Vue.js app to hydrate)*
-
-This app uses AWS S3 with the aws-sdk package from npm to interact with AWS S3.
+bundle takes over which then allows the Vue.js app to hydrate*
 
 ### How we store images ?
 
